@@ -91,3 +91,11 @@ body{
 .btn2:hover{
     text-decoration: underline;
 }
+table {
+    text-align: center;
+    border-color:rgb(239, 79, 95);
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+
+}
