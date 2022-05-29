@@ -3,6 +3,7 @@
     <head>
         <title>User Profile</title>
         <link rel="stylesheet" href="../styles/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <div class="header">
@@ -12,10 +13,12 @@
             <div class="head4"></div>
         </div>
         <div style="margin-top:80px ;">
-            <button class="btn2">edit profile</button>
+            <button id="changeprofile" class="btn2">edit profile</button>
             <input id="changename" type="text" placeholder="name">
             <input id="changelname" type="text" placeholder="lastname">
             <input id="changepassword" type="text" placeholder="password">
+            <input id="changeemail" type="email" placeholder="email">
         </div>
     </body>
+    <script src="\javascript\profile.js"></script>
 </html>
