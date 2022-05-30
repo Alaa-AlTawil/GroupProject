@@ -30,10 +30,10 @@ body{
 .head2{
     flex: 0.15;
     text-align: end;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .head3{
-    flex: 0.17;
+    flex: 0.13;
 }
 .head4{
     flex: 0.1;
@@ -50,6 +50,7 @@ body{
     color: white;
     font-size: 16px;
     border-width: 1px;
+    margin-left: 20px;
 }
 .inputs{
     height: 35px;
@@ -98,4 +99,26 @@ table {
     width: 100%;
     
 
+}
+.restor{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    
+    
+}
+.restor img{
+    width: 250px;
+    height: 250px;
+} 
+ #addrestaurant{
+    margin-top: 150px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
