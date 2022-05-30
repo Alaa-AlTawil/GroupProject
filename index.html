@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>FOODER</title>
-        <link rel="stylesheet" href="styles/styles.css">
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    </head>
-    <body>
-        <div class="bg">
-            <div><img src="Assets/marshmallow-banner-img-1.webp"></div>
-            <div><img src="Assets/fooderlogo.png"></div> 
-            <div><img src="Assets/marshamallow-banner-img-2.webp"></div>
-        </div>
-       
-        <div class="header">
-            <div class="head1">FOODER</div>
-            <div class="head2"><input id="loginemail" class="inputs" type="email" placeholder="Enter Your Email"></div>
-            <div class="head3"><input id="loginpassword" class="inputs" type="password" placeholder="Enter Password"></div>
-            <div class="head4" ><input id="loginbtn" type="submit" value="Login" class="btn1"></div>
-        </div>
-        <div class="Signup">
-            <p>Sign Up</p>
-            <input id="signupname" type="text" class="inputs" placeholder="First name">
-            <input id="signuplast" type="text" class="inputs" placeholder="Last name">
-            <input id="signupemail" type="email" class="inputs" placeholder="Email">
-            <input id="signuppassword" type="password" class="inputs" placeholder="Enter Your Password">
-            <input id="confpassword" type="password" class="inputs" placeholder="Confirm Your Password">
-            <input id="signupbtn" type="submit" class="btn1" value="Sign up">
+  <head>
+    <title>FOODER</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="bg">
+      <div><img src="Assets/marshmallow-banner-img-1.webp" /></div>
+      <div><img src="Assets/fooderlogo.png" /></div>
+      <div><img src="Assets/marshamallow-banner-img-2.webp" /></div>
+    </div>
 
-
-
-        </div>
-        <script src="\javascript\loginsignup.js"></script>
-    </body>
+    <div class="header">
+      <div class="head1"></div>
+      <div class="head2"></div>
+      <div class="head3"></div>
+      <div class="head4"></div>
+    </div>
+    <div class="login">
+      <p>Login</p>
+      <input
+        id="loginemail"
+        class="inputs"
+        type="email"
+        placeholder="Enter Your Email"
+      />
+      <input
+        id="loginpassword"
+        class="inputs"
+        type="password"
+        placeholder="Enter Password"
+      />
+      <input id="loginbtn" type="submit" value="Login" class="btn1" />
+      <button class="signuplink" id="signbtn">Sign Up</button>
+    </div>
+    <div class="Signup">
+      <p>Sign Up</p>
+      <input
+        id="signupname"
+        type="text"
+        class="inputs"
+        placeholder="First name"
+      />
+      <input
+        id="signuplast"
+        type="text"
+        class="inputs"
+        placeholder="Last name"
+      />
+      <input id="signupemail" type="email" class="inputs" placeholder="Email" />
+      <input
+        id="signuppassword"
+        type="password"
+        class="inputs"
+        placeholder="Enter Your Password"
+      />
+      <input
+        id="confpassword"
+        type="password"
+        class="inputs"
+        placeholder="Confirm Your Password"
+      />
+      <input id="signupbtn" type="submit" class="btn1" value="Sign up" />
+    </div>
+    <script src="\javascript\loginsignup.js"></script>
+  </body>
 </html>
