@@ -73,6 +73,7 @@ body,html{
     display: none;
   }
   .appear {
+      display: block;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -90,6 +91,23 @@ body,html{
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
+}
+.adddiv{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(219, 219, 219);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 30%;
+    position: absolute;
+    align-items: center;
+    left: 35%;
+    top: 20%;
+    height: 300px;
+    text-align: center;
+  
+    justify-content: space-between;
 }
 
 .Signup{
@@ -126,6 +144,11 @@ body,html{
     cursor: pointer;
     font-size: 15px;
 
+}
+.btn3{
+    background-color:rgb(239, 79, 95); 
+    border-width: 0;
+    color :white;
 }
 .btn2:hover{
     text-decoration: underline;

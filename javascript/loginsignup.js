@@ -2,6 +2,19 @@ var mail = document.getElementById("loginemail");
 var pass = document.getElementById("loginpassword");
 document.getElementById("loginbtn").addEventListener("click", function1);
 document.getElementById("signbtn").addEventListener("click", function3);
+document.getElementById("loginbtn").addEventListener("click",function4);
+function function4(){
+  document.querySelectorAll(".Signup").forEach((item) => {
+    item.classList.add("hidden");
+  });
+  document.querySelectorAll(".login").forEach((item) => {
+    item.classList.add("appear");
+  });
+  document.querySelectorAll(".login").forEach((item) => {
+    item.classList.remove("login");
+  });
+
+}
 function function3() {
   document.querySelectorAll(".login").forEach((item) => {
     item.classList.add("hidden");
