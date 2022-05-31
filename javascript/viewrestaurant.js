@@ -1,32 +1,32 @@
 axios({
-  method: "get",
-  url: "http://localhost/workshopSe/get_restaurant.php",
-}).then(function (response) {
-  for (var i = 0; i < response.data.length; i++) {
-    console.log(response.data);
-    var base64img = response.data[i]["Img"];
-    let rid = response.data[i]["R_Id"];
-    let t = response.data[i]["R_Name"];
-    let d = response.data[i]["Description"];
+    method: 'get',
+    url: 'http://localhost/Fooder/get_restaurant.php',
+})
+    .then(function (response) {
+        for (var i = 0; i < response.data.length; i++) {
 
-    function Base64ToImage(base64img, callback) {
-      var img = new Image();
-      img.onload = function () {
-        callback(img);
-      };
-      img.src = base64img;
-    }
-    Base64ToImage(base64img, function (img) {
-      const newDiv = document.createElement("div");
-      newDiv.id = rid;
-      newDiv.append(t, img, d);
-      newDiv.classList.add("restor");
-      newDiv.addEventListener("click", function () {
-        localStorage.setItem("Img", this.id);
-        location.href = "http://127.0.0.1:5500/html/user_review.html";
-      });
+            let base64img = response.data[i]["Img"];
+            let t = response.data[i]["R_Name"];
+            let d = response.data[i]["Description"];
+            let i_d = response.data[i]["R_Id"];
 
-      document.getElementById("addrestaurant").append(newDiv);
-    });
-  }
-});
+            Base64ToImage(base64img, function (img) {
+                img.addEventListener("click", function () {
+                    localStorage.setItem("currentRestaurant", JSON.stringify({
+                        img: base64img,
+                        name: t,
+                        desc: d,
+                        id: i_d,
+                    }))
+                    location.href = "http://127.0.0.1:5500/GroupProject/html/user_review.html";
+                })
+                const newDiv = document.createElement("div");
+                newDiv.append(img, t)
+                newDiv.classList.add("restor");
+
+
+                document.getElementById('addrestaurant').append(newDiv)
+            });
+        }
+
+    })

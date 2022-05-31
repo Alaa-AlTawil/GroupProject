@@ -23,15 +23,15 @@ function function1() {
 
     axios({
       method: "post",
-      url: "http://localhost/workshopSe/Login.php",
+      url: "http://localhost/Fooder/Login.php",
       data: data1,
     }).then(function (response) {
       if (response.data["response"] == "Invalid") {
         alert("incorrect email or password");
       } else if (response.data["role"] == "admin") {
-        location.href = "http://127.0.0.1:5500/html/admin.html";
+        location.href = "http://127.0.0.1:5500/GroupProject/html/admin.html";
       } else {
-        location.href = "http://127.0.0.1:5500/html/user.html";
+        location.href = "http://127.0.0.1:5500/GroupProject/html/user.html";
       }
     });
   }
@@ -62,7 +62,7 @@ function function2() {
     data2.append("Password", password.value);
     axios({
       method: "post",
-      url: "http://localhost/workshopSe/signUp.php",
+      url: "http://localhost/Fooder/signUp.php",
       data: data2,
     }).then(function (response) {
       console.log(response.data);

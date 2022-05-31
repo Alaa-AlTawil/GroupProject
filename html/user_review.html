@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>User Page</title>
-        <link rel="stylesheet" href="../styles/styles.css">
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            <div class="head1">addReviews</div>
-            <div class="head2"></div>
-            <div class="head3"></div>
-            <div class="head4"></div>
-        </div>
-        <div id="addrestaurant"><div id="restor">
-            
+
+<head>
+    <title>User Page</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="head1">addReviews</div>
+        <div class="head2"></div>
+        <div class="head3"></div>
+        <div class="head4"></div>
+    </div>
+    <div id="addrestaurant" style="flex-direction: row-reverse;">
+        <div class="reviews">
+            <h3>Reviews</h3>
+            <table id="reviews">
+
+        
+            </table>
         </div>
     </div>
-    <script src="\javascript\review.js"></script>
-    </body>
+    
+    <hr>
+    <div class="review">
+        <div class="rh">
+            <h3>Add Review</h3>
+            <label for="strfb">Feedback: </label>
+            <textarea name="" id="ta" cols="30" rows="6"></textarea>
+            <label for="strfb">Rate us: </label>
+            <input type="number" name="" id="strfb" min="0" max="5">
+            <input type="submit" style="margin-top:20px" id="submit_fb">
+        </div>
+        <div>
+            <img src="../Assets/star.png" alt="" class="starr">
+            <input type="text" readonly class="ins">
+
+        </div>
+    </div>
+    <script src="../javascript/utils.js"></script>
+    <script src="../javascript/restaurant.js"></script>
+</body>
+
 </html>
